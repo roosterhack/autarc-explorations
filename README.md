@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+This project consists of two parts:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. A **responsive modal UI** for adding radiators using accordions and form inputs
+2. A **chat-based AI assistant UI** with typing animations, dark mode, and thoughtful micro-interactions
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 How to Run It Locally
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React** + **TypeScript** – App structure and type safety
+- **Tailwind CSS v4** – Utility-first styling with responsive design
+- **Headless UI** – Accessible UI primitives (used for the dark mode toggle)
+- **Heroicons** – Consistent, modern icon set
+- **Framer Motion** – Smooth UI animations (used for typing dots, transitions)
+- **Vite** – Fast local dev server and build tool
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💡 Challenge 1 – Modal UI to Add Radiators
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### ✅ What I Implemented
+
+- Rebuilt the modal UI based on the provided screenshot design
+- Enhanced visual hierarchy, spacing, font sizes, and field layout
+- Accordion behavior: only one section can be expanded at a time
+- Form fields remain disabled until the radiator type is selected, guiding users step-by-step
+- Added clear spacing between form groups to make the layout easier to scan
+
+### 💬 Suggested Improvements
+
+- Add heading titles or dividers to visually separate the radiator workflow
+- Use helper text and tooltips to guide users through required inputs
+- Implement stronger inline validation and feedback messages
+- Add a toast or confirmation message when a radiator is successfully added
+
+### 📝 Icon Note
+
+The original design used a square-style info icon.
+I chose Heroicons’ `InformationCircleIcon` to maintain stylistic consistency with the rest of the icon set and ensure accessibility. A square icon could easily be swapped in if needed.
+
+
+## 🤖 Challenge 2 – AI Assistant UI
+
+### ✅ What I Built
+
+- A chat-style assistant UI prototype inspired by modern tools like ChatGPT and Claude
+- Includes an animated intro screen to prompt users to interact
+- Supports dark/light theme toggling using Headless UI `Switch` + Tailwind `dark:` variants
+- Smooth micro-interactions:
+  - Animated typing dots (Framer Motion)
+  - Simulated AI “thinking” delay before responses appear
+  - Text streaming effect for AI replies
+  - Automatic scroll-to-bottom on new message
+  - A “Stop” button to cancel AI typing mid-response
+
+### 🧪 Notes
+
+- AI responses are randomized from a mock response list (no API integration)
+- This is a pure UI prototype to demonstrate interaction flow and user experience polish
 ```
