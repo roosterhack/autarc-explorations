@@ -10,14 +10,14 @@ export const ChallengeOne = () => {
 
   return (
     <>
-      <div className="p-6">
+      <nav className="pt-6 px-6">
         <Link to="/">
           <Button variant="transparent" className="flex items-center gap-2">
             <HomeModernIcon className="w-8 h-8 stroke-gray-700" />
             <span className="text-3xl font-semibold text-gray-700">Home</span>
           </Button>
         </Link>
-      </div>
+      </nav>
       <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-5xl mb-8">Challenge 1</h1>
         <Button onClick={() => setIsOpen(true)} variant="primary">
