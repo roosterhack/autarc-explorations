@@ -64,3 +64,9 @@ I chose Heroicons’ `InformationCircleIcon` to maintain stylistic consistency w
 
 - AI responses are randomized from a mock response list (no API integration)
 - This is a pure UI prototype to demonstrate interaction flow and user experience polish
+
+## 🎥 Demo Video
+
+Here’s a quick walkthrough showing the UI animations and interactions:
+
+[Watch the video](https://vimeo.com/1086411435)
