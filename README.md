@@ -12,7 +12,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
 npm run dev
-
+```
 
 ## 📦 Tech Stack
 
@@ -45,7 +45,6 @@ npm run dev
 The original design used a square-style info icon.
 I chose Heroicons’ `InformationCircleIcon` to maintain stylistic consistency with the rest of the icon set and ensure accessibility. A square icon could easily be swapped in if needed.
 
-
 ## 🤖 Challenge 2 – AI Assistant UI
 
 ### ✅ What I Built
@@ -64,4 +63,7 @@ I chose Heroicons’ `InformationCircleIcon` to maintain stylistic consistency w
 
 - AI responses are randomized from a mock response list (no API integration)
 - This is a pure UI prototype to demonstrate interaction flow and user experience polish
+
+```
+
 ```
