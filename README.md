@@ -39,6 +39,7 @@ npm run dev
 - Use helper text and tooltips to guide users through required inputs
 - Implement stronger inline validation and feedback messages
 - Add a toast or confirmation message when a radiator is successfully added
+- More user feedback, for example, when user clicks on the disabled button, there could be a subtle animation and a tooltip to explain why the button is disabled.
 
 ### 📝 Icon Note
 

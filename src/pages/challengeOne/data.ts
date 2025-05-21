@@ -47,7 +47,7 @@ export const radiatorCategories: RadiatorCategory[] = [
       {
         id: 'tiefe',
         label: 'Tiefe (mm)',
-        type: 'number',
+        type: 'text',
         placeholder: 'z. B. 100',
       },
       {
